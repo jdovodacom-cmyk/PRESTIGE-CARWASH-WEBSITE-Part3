@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Request a car wash estimate from Prestige Car Wash. Choose your vehicle, package and date to see an example price."><title>Prestige Car Wash | Enquiry</title><meta name="keywords" content="car wash quote, car wash estimate, book car wash, vehicle cleaning enquiry, Prestige Car Wash"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/extras.css"></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html">✨ Prestige Car Wash</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a class="active" href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav></header>
+<main><section class="page-banner"><p class="eyebrow">Plan your clean</p><h1>Request an estimate</h1><p>Tell us a little about your vehicle and preferred service.</p></section>
+<section class="section form-layout"><div class="form-intro"><h2>Let’s find your package</h2><p>Complete the form and we will validate your details and show an example starting estimate.</p><p class="note">Do it the Prestige Way!</p></div>
+<form id="enquiryForm" class="form-card" novalidate>
+<label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Your name">
+<label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+<label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" required pattern="[0-9+() -]{7,20}" placeholder="e.g. 071 234 5678">
+<label for="vehicle">Vehicle type *</label><select id="vehicle" name="vehicle" required><option value="">Choose vehicle</option><option value="1">Small car</option><option value="1.2">Sedan / hatchback</option><option value="1.5">SUV / bakkie</option></select>
+<label for="service">Service package *</label><select id="service" name="service" required><option value="">Choose service</option><option value="Basic Wash">Basic Wash — R80</option><option value="Wash & Vac">Wash &amp; Vac — R150</option><option value="Full Valet">Full Valet — R300</option></select>
+<label for="date">Preferred date *</label><input id="date" name="date" type="date" required>
+<label for="details">Extra details</label><textarea id="details" name="details" rows="4" maxlength="500" placeholder="Any special requests? (optional)"></textarea>
+<button class="button full" type="submit">Calculate estimate</button><div id="enquiryResult" class="form-result" role="status" aria-live="polite"></div>
+</form></section></main>
+<footer class="footer"><p>© <span class="year"></span> Prestige Car Wash.</p><p><a href="references.html">References &amp; credits</a></p></footer><script src="js/main.js"></script><script src="js/extras.js" defer></script></body></html>
